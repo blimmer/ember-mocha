@@ -26,7 +26,9 @@ function setupRegistry() {
 describe('setupComponentTest', function() {
 
   describe('x-foo component', function() {
-    setupComponentTest('x-foo');
+    setupComponentTest('x-foo', {
+      needs: []
+    });
 
     beforeEach(function() {
       setupRegistry();
